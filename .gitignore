@@ -4,10 +4,10 @@
 !themes/
 !uploads/
 !README.md
+!starter-master
 
 plugins/*
-!plugins/inhabitant-functionality/
-!plugins/business-hours-widget/
+
 
 
 themes/*
