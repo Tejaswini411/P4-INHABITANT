@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -225,6 +226,20 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Novocento Sans';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novocento Sans';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -282,6 +297,9 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+a {
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -558,11 +576,34 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
+
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 3rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget h2 {
+    font-size: 24px;
+    font-size: 1.5rem; }
+  .widget ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .widget p {
+    margin-bottom: 0.5rem; }
+  .widget .contact-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .widget .contact-meta i {
+      line-height: 1.8;
+      margin-right: 0.5rem;
+      width: 20px; }
+  .widget .day-of-week {
+    font-weight: bold; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -670,29 +711,47 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 7; }
-
-.topflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.topnav {
-  list-style: none;
-  font-family: ' ';
-  font-weight: 500;
-  font-style: normal;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 150px; }
-
-.topnav li {
-  display: inline-block;
-  padding: 0 40px; }
+.site-footer {
+  color: #fff; }
+  .site-footer .footer-bar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 2rem 2rem 0 2rem; }
+  .site-footer .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-footer .contact-info {
+    line-height: 2.5rem;
+    padding-right: 70px; }
+    .site-footer .contact-info a:hover {
+      text-decoration: underline;
+      color: #fff; }
+  .site-footer .contact-info h3 {
+    font-size: 18px; }
+  .site-footer .email,
+  .site-footer .links {
+    font-family: "Merriweather"; }
+  .site-footer .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    font-size: 25px;
+    margin-top: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .site-footer .legal {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 1rem; }

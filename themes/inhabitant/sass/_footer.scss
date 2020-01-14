@@ -8,12 +8,13 @@
     width: 100%;
     padding: 2rem 2rem 0 2rem;
   
-    & img {
-      transform: translate(0, -50px);
-    }
+  }
+  .footer-wrapper{
+      display: flex;
   }
   .contact-info {
     line-height: 2.5rem;
+    padding-right: 70px;
     & a:hover {
       text-decoration: underline;
       color: #fff;
@@ -22,7 +23,6 @@
 
   .contact-info h3 {
   font-size: 18px;
-  color: $color__footer-text;
 }
 
 .email,
@@ -38,6 +38,7 @@ font-size: 25px;
 margin-top: 15px;
 justify-content: space-between;
 }
+
 
 .legal {
 margin: 0;
