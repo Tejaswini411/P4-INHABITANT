@@ -1,1 +1,25 @@
+.header-logo-img{
+ 
 
+}
+
+
+
+
+.site-navigation{
+    display: flex;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+.list-item li{
+    list-style: none;
+	//display: inline-block;
+	padding: 0 40px;
+}
