@@ -609,6 +609,18 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  width: 500px;
+  padding: 40px 30px;
+  border-left: 0px; }
+  .widget-area div {
+    margin: 20px 0;
+    border: 0px; }
+  .widget-area a {
+    color: #248a83; }
+  .widget-area a:hover {
+    color: #248a83; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
