@@ -18,15 +18,15 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body class="home-page">
+	<body <?php body_class(); ?>>
 		<div class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 	<header id="masthead" class="site-header" role="banner">
 			<div class="container">
 					<a class="header-logo" href="<?= get_site_url(); ?>">
-						<img class="header-logo-img" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent-white.svg" style="display: <?php echo $displaywhite ?>;">
-					   <!--  <img class="header-logo-img" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" style="display: <?php echo $displayblue ?>;"> -->
+						<!-- <img class="header-logo-img" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent-white.svg" style="display: <?php echo $displaywhite ?>;"> -->
+					    <img class="header-logo-img" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg" style="display: <?php echo $displayblue ?>;">
 					</a>
 				</div>
 		
@@ -44,26 +44,17 @@
 
 <div class="header-search">
 <form role="search" method="get" class="search-form" action="">
-		<fieldset>
-			<a href="#" class="search-toggle" aria-hidden="true">
+			<a href="#" id="searchToggle" class="search-toggle" aria-hidden="true">
 				<i class="fa fa-search"></i>
 			</a>
 			<label>
 				<input type="search" class="search-field" placeholder="Type and hit enter..." value="" name="s" title="Search for:" />
 			</label>
 			<input type="submit" id="search-submit" class="screen-reader-text" value="Search" />
-		</fieldset>
 </form>
 </div>
 
 </nav><!-- #site-navigation -->
 </div>
 </header>
-	
-
-
-
-
-
-
-	
+<div id="content" class="site-content">

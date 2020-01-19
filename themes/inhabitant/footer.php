@@ -32,7 +32,7 @@
 			<p> Sunday: Closed </p>
 		</div>
 </div>
-		<img class="footer-logo" src="wp-content/themes/inhabitant/images/logos/inhabitent-logo-text.svg">
+		<img class="footer-logo" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg">
 </div>
 	   <p class="legal"> COPYRIGHT &copy; 2016 INHABITENT</p>
 

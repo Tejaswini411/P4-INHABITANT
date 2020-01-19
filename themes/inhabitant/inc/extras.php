@@ -17,6 +17,17 @@ function red_starter_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	// echo get_page_template();
+	if ( is_post_type_archive( 'product_type' ) ) {
+        $classes[] = 'shop';
+	}
+	if ( is_home() ) {
+        $classes[] = 'home';
+	}
+	if ( is_singular( 'product_type' ) ) {
+        $classes[] = 'product';
+	}
+	
 	if ( is_singular( 'page' ) ) {
 		global $post;
 		$classes[] = 'page-' . $post->post_name;
