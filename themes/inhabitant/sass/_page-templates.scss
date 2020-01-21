@@ -4,8 +4,31 @@
 
 /* Front page */
 
+.page-about {
 
-.about {
+    .site-header {
+        position: absolute;
+        background: transparent;
+        color: #fff;
+        border: none;
+
+        .site-navigation ul.menu li.list-item a {
+            color: #fff;
+
+        }
+
+        nav.site-navigation .search-toggle {
+            color: #fff;
+        }
+    }
+
+    .site-content {
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+.about-container {
+
 .entry-content .hero-image-header{
     height: 100vh;
     background-size: cover cover;
@@ -13,14 +36,22 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 100vh;
+    width: 100vw;
     
 }
 
+.hentry {
+    margin: 0;
+}
+
+.entry-content {
+    margin: 0;
+}
+
 .entry-title {
-    text-align: center;
-    margin-bottom: 0;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 48px;
 }
 .entry-content h2 {
     text-align: center;
@@ -47,3 +78,4 @@
 
 }
 
+}

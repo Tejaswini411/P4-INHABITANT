@@ -1,0 +1,87 @@
+.journal-type {
+  padding-top: 57px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+
+  #primary {
+    width: 73%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e1e1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .journal-button {
+      background: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    color: #000;
+
+    &:hover {
+      background: #248a83;
+      border-color: #fff;
+      color: #fff;
+
+    }
+    }
+  }
+
+  #secondary {
+    width: 27%;
+    padding-left: 5%;
+  }
+
+  .site-main {
+
+    & .content-area {
+      max-width: 800px;
+    }
+
+  & .entry-header {
+    position: relative;
+    object-fit: cover;
+    line-height: 0;
+
+    & .entry-meta {
+      background-color: #248a83;
+      bottom: 0;
+      color: #fff;
+      display: inline-block;
+      font-family:  Novecento Sans Web,sans-serif;
+      padding: .4rem;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      
+    }
+  }
+
+  & .entry-title {
+    background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+    line-height: 1.25;
+
+    a {
+      font-family:sans-serif;
+      color: #fff;
+    }
+  }
+}
+}

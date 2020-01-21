@@ -6,7 +6,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php echo the_content(); ?>
-	 			<!-- <section class="find-us-main">
+	 			 <section class="find-us-main">
 					<h2 class="find-us-title">Find Us</h2>
 					<iframe class ="map"
 					  width="600"
@@ -47,7 +47,7 @@ get_header(); ?>
 						</p>
 						<div class="form-error" role="alert">One or more fields have an error. Please check and try again.
 						</div>
-					</form> -->
+					</form> 
 
 
 			<?php endwhile; //End of the loop. ?>

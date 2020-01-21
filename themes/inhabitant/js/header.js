@@ -1,6 +1,5 @@
-(function() {
-    document.getElementById('searchToggle').onClick = function(e) {
-        e.preventDefault();
-        alert('test');
-    };
-})();
+$('document').ready(function() {
+    $('#searchToggle').on('click', function() {
+        $('.search-container').toggle('slide');
+    });
+});

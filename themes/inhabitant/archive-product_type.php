@@ -7,14 +7,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area archive-product-type">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-
-			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -22,6 +18,7 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content', 'products' );
 				?>
+				
 
 			<?php endwhile; ?>
 
@@ -36,5 +33,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

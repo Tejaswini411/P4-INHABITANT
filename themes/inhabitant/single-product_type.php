@@ -1,7 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts.
- *
+ * The template for displaying all single product posts.
  * @package RED_Starter_Theme
  */
 
@@ -9,24 +8,24 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'product' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+		<div class="single-product-container">
+			<?php while ( have_posts() ) : the_post(); ?>
+			<div class ="product-image-wrapper"><?php the_post_thumbnail(); ?></div>
+			<div class ="product-text-wrapper">
+				<h2><?php the_title(); ?></h2>
+				<h3><?php echo CFS()->get('Price'); ?></h3> 
+				<?php the_content(); ?>
+				<div class=social-buttons>
+					<button class="smb"><i class="fab fa-facebook-f"></i> Like</button>
+					<button class="smb"><i class="fab fa-twitter"></i> Tweet</button>
+					<button class="smb"><i class="fab fa-pinterest"></i> Pin</button>
+				</div>
+			</div>
+		</div>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
