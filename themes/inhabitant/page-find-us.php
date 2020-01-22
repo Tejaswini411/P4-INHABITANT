@@ -18,10 +18,11 @@ get_header(); ?>
 					<h2>We Take Camping Very Seriously.</h2>
 					<p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
 				<section class="form">
+				<?php echo do_shortcode( '[contact-form-7 id="93" title="Contact form 1"]' ); ?>
 					<h2>Send Us Email!</h2>
 
 					
-					<form method="post" class="form-inner">
+					<!-- <form method="post" class="form-inner">
 						<p class="form-name">
 							<label for="name">Name<span class="required"> *</span></label>
 							<input type="text" id="name" name="name" size="40">
@@ -47,7 +48,7 @@ get_header(); ?>
 						</p>
 						<div class="form-error" role="alert">One or more fields have an error. Please check and try again.
 						</div>
-					</form> 
+					</form>  -->
 
 
 			<?php endwhile; //End of the loop. ?>

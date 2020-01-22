@@ -1,35 +1,25 @@
-<?php
-/**
- * Template part for displaying single posts.
- *
- * @package RED_Starter_Theme
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+	<div class="product">
+		<div class="product__img">
+			<?php if (has_post_thumbnail()) : ?>
+				<?php the_post_thumbnail('large'); ?>
+			<?php endif; ?>
+		</div>
+		<div class="product__content">
+			<header class="entry-header">
+				<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+			</header><!-- .entry-header -->
 
+			<div class="entry-content">
+				<p class="product__price">$<?php echo get_post_meta(get_the_ID(), 'price', true) ?>.00</p>
+				<?php the_content(); ?>
+				<div class="social">
+					<button type="button" class="social__btn"><i class="fab fa-facebook-f"></i>Like</button>
+					<button type="button" class="social__btn"><i class="fab fa-twitter"></i>Tweet</button>
+					<button type="button" class="social__btn"><i class="fab fa-pinterest"></i>Pin</button>
+				</div>
+			</div><!-- .entry-content -->
+		</div>
+	</div>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -27,5 +27,5 @@
 	</div><!-- .entry-content -->
 
 
-	<a href="<?php esc_url( get_permalink() ) ?>" class="journal-button">Read More</a>
+	<a href="<?php the_permalink(); ?>" class="journal-button">Read More</a>
 </article><!-- #post-## -->

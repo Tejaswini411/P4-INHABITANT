@@ -48,7 +48,7 @@
 	display: block;
 }
 
-.site-content {
+body:not(.home).site-content {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;

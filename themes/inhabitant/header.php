@@ -42,6 +42,7 @@
 
 
 <div class="header-search">
+<?php get_search_form(); ?>
 <form role="search" method="get" class="search-form" action="">
 			<a href="#" id="searchToggle" class="search-toggle" aria-hidden="true">
 				<i class="fa fa-search"></i>
@@ -61,22 +62,14 @@
 
 
 </div>
-<div class="shop-page-header">
+<!-- <div class="shop-page-header">
    				<h1 class="page-title">Shop Stuff</h1>
                                  <ul class="product-type-list">
-                                             <li>
-                           <p><a href=" ">Do</a></p>
-                        </li>
-                                             <li>
-                           <p><a href=" ">Eat</a></p>
-                        </li>
-                                             <li>
-                           <p><a href=" ">Sleep</a></p>
-                        </li>
-                                             <li>
-                           <p><a href=" ">Wear</a></p>
-                        </li>
-									   </ul>
-</div>
+                                             <li><a href=" ">Do</a></li>
+                                             <li><a href=" ">Eat</a></li>
+                                             <li><a href=" ">Sleep</a></li>
+                                             <li><a href=" ">Wear</a></li>
+								</ul>
+</div> -->
 </header>
 <div id="content" class="site-content">

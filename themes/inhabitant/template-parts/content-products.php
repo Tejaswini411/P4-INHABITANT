@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<a href=" <?php get_permalink($post_id) ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
+			<a href=" <?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
 		<?php endif; ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
