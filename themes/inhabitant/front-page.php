@@ -1,11 +1,13 @@
-<?php get_header(); ?>
+<div class="home-container home-header">
+    <?php get_header(); ?>
+</div>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <section class="home-hero">
         <img class="header-logo-img about-header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg" />
         </section>
-        <div class="content-wrapper">
+        <div class="content-wrapper front-page-wrapper">
             <section class="home__products">
                 <h2>Shop Stuff</h2>
                 <div class="home__productsWrapper">
@@ -50,10 +52,38 @@
                                     </div><!-- .entry-meta -->
                                 <?php endif; ?>
                                 <?php the_title(sprintf('<a href="%s" rel="bookmark"><h3 class="entry-title">', esc_url(get_permalink())), '</h3></a>'); ?>
-                                <a href="<?php the_permalink(); ?>" class="read-more">Read entry</a>
+                                <a href="<?php the_permalink(); ?>" class="black-btn">Read entry</a>
                             </div>
                         </li>
                     <?php endwhile; ?>
                 </ul>
             </section><!-- home__journals -->
+
+            <section class="adventure container">
+					<h2>Latest Adventures</h2>
+					<ul class="clearfix">
+						<?php
+						$args = array(
+							'post_type' => 'adventure',
+							'order' => 'DESC',
+							'posts_per_page' => 4,);
+							$adventure_posts = get_posts( $args ); // returns an array of posts
+							?>
+							<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+								<li>
+									<div class="adventure-img"><?php the_post_thumbnail('large'); ?>
+									</div>
+									<div class="headline">
+										<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+										<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
+									</div>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+						<p class="green-link"><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a></p>
+					</section><!-- .adventure -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+
 <?php get_footer(); ?>

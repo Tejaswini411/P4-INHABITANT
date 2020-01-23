@@ -59,44 +59,13 @@
             .search-field {
                 border: none;
                 cursor: text;
+                background: transparent;
+                border-bottom: 1px solid #999;
+                font-size: 16px;
             }
         }
     }
-
     
-}
-.shop-page-header {
-    border-bottom: 1px dashed #c8c8c8;
-    margin-bottom: 3rem;
-    text-align: center;
-    display: none;
-    margin-top: 105px;
-
-    .post-type-archive & {
-        display: block;
-    }
-
-    .product-type-list {
-        display: flex;
-        font-family: Novecento Sans Web,sans-serif;
-        font-size: 19.2px;
-        font-size: 1.2rem;
-        -ms-flex-pack: center;
-        justify-content: center;
-        list-style-type: none;
-        margin-left: 0;
-        padding-left: 0;
-        text-transform: uppercase;
-
-        li {
-            margin: 0 1.5rem;
-
-            a {
-                color: #248a83;
-                text-decoration: none;
-            }
-        }
-    }
 }
 
 .regular-header-logo {
@@ -110,7 +79,8 @@
 .about-header-logo {
     display: none;
 
-    .page-about & {
+    .page-about &, .page-home & {
         display: block;
     }
 }
+

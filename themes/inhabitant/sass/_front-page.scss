@@ -1,15 +1,47 @@
 .home{
+  .site-content {
+    max-width: 100%;
+  }
     h2{
-        font-size: 2.4rem;
+        text-transform: uppercase;
+        color: #2f1339;
+        font-size: 38px;
         margin-bottom: 3.75rem;
         text-align: center;
-       // font-family: $font__accent-sub;
+        font-family: 'Novocento Sans Normal';
+        letter-spacing: 2px;
     }
     .content-wrapper{
         margin-left: auto;
         margin-right: auto;
         width: 1120px;
     }
+
+    .regular-header-logo {
+      display: none;
+    }
+
+    .home-header {
+      .site-header {
+        background: transparent;
+        border: none;
+        color: #fff;
+  
+        nav.site-navigation {
+          ul {
+            li.list-item {
+              a {
+                color: #fff;
+              }
+            }
+          }
+          a.search-toggle {
+            color: #fff;
+          }
+        }
+      }
+    }
+    
 &-hero {
     -ms-flex-align: center;
     align-items: center;
@@ -23,10 +55,7 @@
     justify-content: center;
     height: 100vh;
 }
-.header-logo-img {
-    display: inline;
 
-}
 &__products{
     margin-bottom: 4.5rem;
     &Wrapper{
@@ -35,13 +64,13 @@
     text-align: center;
 }
 &Type{
-    border: 1px solid orange;
+    border: 1px solid #e1e1e1;
     border-top-width: 5px;
     flex: 0 1 23.5%;
     max-width: 23.5%;
     padding: .75rem;
     &:hover{
-        border: 1px solid orange;
+        border: 1px solid #d99054;
         border-top-width: 5px;
     }
     img{
@@ -78,8 +107,29 @@
         padding-bottom: 1rem;
     }
     h3{
-        font-size: 1.3rem;
-    margin-bottom: 1.75rem;
+       letter-spacing: 0.1em;
+       text-transform: uppercase;
+       color:#248A83 ;
+       font-size: 1.3rem;
+       margin-bottom: 1.75rem;
+
+    }
+
+    .black-btn{
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000;
+      line-height: 1;
+      letter-spacing: normal;
+      margin-right: 6px;
+      padding: .75rem 1.5rem;
+           &:hover{
+            background-color: #248A83;
+            color: #fff;
+            border: none;
+             
+           }
     }
     .entry-meta{
         font-size: .75rem;
@@ -87,3 +137,83 @@
 }
 
 }
+
+/* Latest Adventure */
+
+.adventure {
+    ul {
+      padding: 0;
+      margin-bottom: 2.5rem;
+    }
+    li {
+      width: 270px;
+      height: 270px;
+      margin-left: 20px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      float: left;
+      &:first-child{
+        width: 540px;
+        height: 540px;
+        margin: 0;
+        img {
+          min-height: 640px;
+        }
+        h3 {
+          font-size: 3rem;
+        }
+      }
+      &:nth-child(2){
+        width: 560px;
+        height: 250px;
+        margin: 0 0 20px 20px;
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .adventure-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    img {
+      width: auto;
+      max-height: 400px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+    }
+    .headline {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      padding: 3rem 1.5rem;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    h3 {
+      font: 1.5rem $font__main;
+      text-transform: none;
+      margin-bottom: 2.5rem;
+      a {
+        color: white;
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+    .white-link {
+      a {
+        color: white;
+        border: 1px solid white;
+      }
+    }
+    .green-link {
+      a {
+      font-size: 1.1rem;
+      }
+    }
+  }

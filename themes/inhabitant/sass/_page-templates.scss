@@ -4,23 +4,26 @@
 
 /* Front page */
 
-.page-about {
+    .about-page-header {
 
-    .site-header {
-        position: absolute;
-        background: transparent;
-        color: #fff;
-        border: none;
-
-        .site-navigation ul.menu li.list-item a {
+        .site-header {
+            position: absolute;
+            background: transparent;
             color: #fff;
-
-        }
-
-        nav.site-navigation .search-toggle {
-            color: #fff;
+            border: none;
+    
+            .site-navigation ul.menu li.list-item a {
+                color: #fff;
+    
+            }
+    
+            nav.site-navigation .search-toggle {
+                color: #fff;
+            }
         }
     }
+
+.page-about {
 
     .site-content {
         margin-left: initial;
@@ -36,7 +39,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100vh;
     width: 100vw;
     
 }
@@ -78,4 +80,9 @@
 
 }
 
+}
+
+.site-content {
+    margin: auto;
+    max-width: 1120px;
 }

@@ -6,40 +6,46 @@
  */
 
 ?>
-
-			</div><!-- #content -->
-
-			<footer id="colophon" class="site-footer" style="background-image:url('<?= get_template_directory_uri() ?>/images/dark-wood.png');">
-	<div class="footer-bar">
-		<div class="footer-wrapper">
-    	<div class="contact-info">
-			<h3>CONTACT INFO </h3>
-			<div class="email"><i class="fas fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></div>
-			<div class="links"><i class="fas fa-phone-alt"></i><a href="tel:778-456-7891">778-456-7891.</a> </div>
-    
-       
-       	<div class="social-media">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i> 
-           	<i class="fab fa-twitter-square" aria-hidden="true"></i> 
-           	<i class="fab fa-google-plus-square" aria-hidden="true"></i> 
-		</div>
-		</div>
-
-		<div class="time">
-			<h3> BUSINESS HOURS </h3>
-			<p> Monday-Friday: 9am to 5pm </p>
-			<p> Saturday: 10am to 2pm </p>
-			<p> Sunday: Closed </p>
-		</div>
-</div>
-		<img class="footer-logo" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg">
-</div>
-	   <p class="legal"> COPYRIGHT &copy; 2016 INHABITENT</p>
-
-</footer>
-		</div><!-- #page -->
-
-		<?php wp_footer(); ?>
-
-	</body>
+			
+		</div><!-- #content -->
+		<footer id="colophon" class="site-footer" style="background-image:url('<?= get_template_directory_uri() ?>/images/dark-wood.png');">
+			<div class="container">
+				<div class="contact">
+					<h3>Contact Info</h3>
+					<p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+					<p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:778-456-7891">778-456-7891</a></p>
+					<p>
+						<i class="fab fa-facebook-square" aria-hidden="true" ></i>
+						<i class="fab fa-twitter-square" aria-hidden="true"></i>
+						<i class="fab fa-google-plus-square" aria-hidden="true"></i>
+					</p>
+				</div>
+				<div class="business">
+					<h3>Business Hours</h3>
+					<p><span>Monday-Friday:</span> 9am to 5pm</p>
+					<p><span>Saturday:</span> 10am to 2pm</p>
+					<p><span>Sunday:</span> Closed</p>
+				</div>
+				<div class="footer-logo">
+				
+						<img src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg"  alt="Inhabitent Logo" />
+					
+				</div>
+				<div class="site-info">
+					<p>Copyright &copy; <?php echo date("Y"); ?> Inhabitent</p>
+				</div><!-- .site-info -->
+			</div><!--container-->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<?php wp_footer(); ?>
+</body>
 </html>
+
+
+
+
+
+
+
+<!-- <img class="footer-logo" src="<?= get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg"  alt="Inhabitent Logo" />
+<footer id="colophon" class="site-footer" style="background-image:url('<?= get_template_directory_uri() ?>/images/dark-wood.png');"> -->

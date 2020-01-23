@@ -1,4 +1,4 @@
-
+<div class="about-page-container about-page-header">
 	<?php
 	/**
 	 * The template for displaying all pages.
@@ -7,6 +7,7 @@
 	 */
 
 	get_header(); ?>
+	</div>
 <div class="about-container">
 		<div id="primary" class="content-area about">
 			<main id="main" class="site-main" role="main">

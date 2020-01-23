@@ -1,0 +1,17 @@
+.page-find-us {
+    .find-us-container {
+        width: 1120px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        #primary {
+            border-right: 1px solid #e1e1e1;
+            padding-top: 80px;
+        }
+
+        #secondary {
+            padding-top: 80px;
+        }
+    }
+}

@@ -1,51 +1,51 @@
 .site-footer {
-    color: #fff;
-
-.footer-bar {
-    position: relative;
+  width: 100%;
+  height: 355px;
+ // background-image:url('<?= get_template_directory_uri() ?>/images/dark-wood.png') repeat;
+  padding-top: 4rem;
+  color: white;
+  line-height: 1.4;
+  .container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 2rem 2rem 0 2rem;
-  
-  }
-  .footer-wrapper{
+    flex-wrap: wrap;
+    max-width: 1120px;
+    margin: auto;
+    .contact,.business {
+      width: 25%;
+    }
+    .footer-logo {
+      height: 50px;
+      width: 50%;
       display: flex;
-  }
-  .contact-info {
-    line-height: 2.5rem;
-    padding-right: 70px;
-    & a:hover {
-      text-decoration: underline;
-      color: #fff;
+      justify-content: flex-end;
+    }
+    .site-info {
+      text-align: center;
+      width: 100%;
+      font-family: $font__main;
+      text-transform: uppercase;
+      margin-bottom: 0;
     }
   }
-
-  .contact-info h3 {
-  font-size: 18px;
-}
-
-.email,
-.links
-{
-  font-family: "Merriweather";
-}
-
-.social-media{
-display: flex;
-width: 100px;
-font-size: 25px;
-margin-top: 15px;
-justify-content: space-between;
-}
-
-
-.legal {
-margin: 0;
-width: 100%;
-text-align: center;
-font-size: 16px;
-font-weight: lighter;
-padding-bottom: 1rem;
-}
+  h3 {
+    color: #d99054;
+    margin-bottom: $base__space-unit;
+  }
+  p span {
+    font-weight: bold;
+  }
+  i {
+    margin: 0 .4rem;
+    width: 1rem;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
