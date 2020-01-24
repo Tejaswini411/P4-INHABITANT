@@ -20,6 +20,7 @@ get_header(); ?>
 
 		 foreach($terms as $term){
 			echo '<div class="taxonomy-button-container">';
+			
 			echo '<a href="' . get_term_link( $term ) . '" class="taxonomy-button">' . $term->name . '</a>';
 		echo '</div>';
 		};
@@ -37,8 +38,9 @@ get_header(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content', 'products' );
+					
 				?>
-
+					
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

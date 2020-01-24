@@ -16,7 +16,7 @@ get_header(); ?>
 			<header class="page-header">
 				<!-- archive title and description -->
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );	
+					single_term_title( '<h1 class="page-title">', '</h1>' );	
 					?>
 				 <div class="single-term-description">
 					 <?php the_archive_description(); ?>

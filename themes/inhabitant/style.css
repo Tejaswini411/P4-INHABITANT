@@ -775,9 +775,8 @@ object {
 
 .page-about .about-container .entry-content p {
   color: #404040;
-  font-family: Merriweather Web;
+  font-family: Merriweather Web,serif;
   font-size: 16px;
-  font-size: 1rem;
   line-height: 1.75;
   max-width: 800px;
   margin-right: auto;
@@ -874,13 +873,12 @@ object {
       text-transform: uppercase;
       margin-bottom: 0; }
   .site-footer h3 {
-    font-family: 'novecento_sans_widedemibold';
-    font-style: normal;
     letter-spacing: 2px;
     color: #d99054;
     margin-bottom: 1.5rem; }
   .site-footer p span {
-    font-weight: bold; }
+    font-weight: 700;
+    font-family: 'merriweatherbold'; }
   .site-footer i {
     margin: 0 .4rem;
     width: 1rem; }
@@ -966,7 +964,7 @@ object {
     display: block; }
 
 .journal-type {
-  padding-top: 57px;
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,7 +1028,8 @@ object {
     line-height: 1.25; }
     .journal-type .site-main .entry-title a {
       font-family: sans-serif;
-      color: #fff; }
+      color: #fff;
+      font-weight: 600; }
 
 .single-product_type .site-main .one-product {
   display: -webkit-box;
@@ -1038,7 +1037,8 @@ object {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 30px; }
 
 .single-product_type .site-main .one-product .product-img {
   width: 540px;
@@ -1154,10 +1154,9 @@ object {
 .home h2 {
   text-transform: uppercase;
   color: #2f1339;
-  font-size: 38px;
+  font-size: 1.5rem;
   margin-bottom: 3.75rem;
   text-align: center;
-  font-weight: 300;
   font-style: normal;
   letter-spacing: 2px; }
 
@@ -1284,6 +1283,13 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .page-find-us .find-us-container .find-us-title {
+    font-size: 40px; }
+  .page-find-us .find-us-container h2 {
+    color: #2f1339;
+    font-size: 33.6px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; }
   .page-find-us .find-us-container #primary {
     border-right: 1px solid #e1e1e1;
     padding-top: 80px; }
@@ -1317,7 +1323,8 @@ object {
         line-height: 1.75;
         text-transform: none;
         letter-spacing: normal;
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem;
+        font-weight: 400; }
       .tax-product_taxonomy .site-main .page-header .shop-term-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1361,44 +1368,58 @@ object {
 .single-post .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  width: 760px; }
+  display: flex; }
+
+.single-post .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-top: 50px;
+  padding-right: 5%;
+  width: 73%; }
 
 .single-post #secondary {
   width: 27%;
   padding-left: 5%; }
 
-.single-post .site-main .content-area {
-  max-width: 800px; }
+.single-post h2 {
+  text-transform: uppercase;
+  color: #2f1339; }
 
-.single-post .site-main .entry-header {
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  line-height: 0; }
-  .single-post .site-main .entry-header .entry-meta {
+.single-post .site-main {
+  width: 760px; }
+  .single-post .site-main .content-area {
+    max-width: 800px; }
+  .single-post .site-main .entry-header {
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    line-height: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .single-post .site-main .entry-header img {
+      width: 760px; }
+    .single-post .site-main .entry-header .entry-meta {
+      background-color: #248a83;
+      bottom: 0;
+      color: #fff;
+      display: inline-block;
+      font-family: Novecento Sans Web,sans-serif;
+      padding: 15px;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase; }
+  .single-post .site-main .entry-title {
     background-color: #248a83;
-    bottom: 0;
     color: #fff;
-    display: inline-block;
-    font-family: Novecento Sans Web,sans-serif;
-    padding: 15px;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
     position: absolute;
-    right: 0;
-    text-transform: uppercase; }
-
-.single-post .site-main .entry-title {
-  background-color: #248a83;
-  color: #fff;
-  font-size: 33.6px;
-  font-size: 2.1rem;
-  left: 0;
-  padding: .75rem 1.5rem;
-  position: absolute;
-  margin-top: 2.25rem;
-  max-width: 75%;
-  top: 0;
-  line-height: 1.25; }
-  .single-post .site-main .entry-title a {
-    font-family: sans-serif;
-    color: #fff; }
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+    line-height: 1.25; }
+    .single-post .site-main .entry-title a {
+      font-family: sans-serif;
+      color: #fff; }

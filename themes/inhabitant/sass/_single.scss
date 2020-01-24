@@ -1,15 +1,27 @@
 .single-post{
     .site-content {
+  
         display: flex;
-        width: 760px;
+      
+    }
+    .content-area{
+      border-right: 1px solid #e1e1e1;
+      padding-top: 50px;
+      padding-right: 5%;
+      width: 73%;
     }
 
     #secondary {
         width: 27%;
         padding-left: 5%;
       }
+      h2{
+        text-transform: uppercase;
+        color: #2f1339;
+      }
     
       .site-main {
+        width: 760px;
     
         & .content-area {
           max-width: 800px;
@@ -19,6 +31,10 @@
         position: relative;
         object-fit: cover;
         line-height: 0;
+        align-items: center;
+          img{
+            width: 760px;
+          }
     
         & .entry-meta {
           background-color: #248a83;

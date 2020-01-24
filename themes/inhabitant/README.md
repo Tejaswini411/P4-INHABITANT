@@ -1,6 +1,6 @@
 Inhabitent - Website that displays a mixture of camping blogs and posts of camping.
 
-![Getting Started](themes/inhabitant/images/screenshot.png)
+![Getting Started](P4-INHABITANT/themes/inhabitant/images/screenshot.png)
 
 Technologies used:
 
