@@ -1,20 +1,27 @@
 Inhabitent - Website that displays a mixture of camping blogs and posts of camping.
 
-![Getting Started](P4-INHABITANT/themes/inhabitant/images/screenshot.png)
+![alt text](https://github.com/Tejaswini411/P4-INHABITANT/blob/master/themes/inhabitant/images/screenshot.png)
+
+
 
 Technologies used:
 
-Wordpress - Used custom theme to organize pages and posts.
+# Wordpress 
+ Used custom theme to organize pages and posts.
 
-Javascript - jQuery was used to enable a function on the search bar to expand and contract using blur and focus.
+# Javascript 
+jQuery was used to enable a function on the search bar to expand and contract using blur and focus.
 
-PHP/HTML - Used PHP functions for the backbone display of the website.
+# PHP/HTML 
+ Used PHP functions for the backbone display of the website.
 
-Sass - Used to style website and include Mixins for organization.
+# Sass 
+Used to style website and include Mixins for organization.
 
-Fontawesome - Icons for media (google+, instagram, twitter): https://fontawesome.com/icons?d=gallery
+ # Fontawesome 
+ Icons for media (google+, instagram, twitter): https://fontawesome.com/icons?d=gallery
 
-Learned/relection:
+Learned 
 Working with WordPress (WP) is an intuitive and easy way to organize and build a dynamic website. Learning the proper hierarchy is essential to working with WP to maintain proper functionality. I started using Sass more efficiently to help make css more organized.
 
 - Tejaswini, Red Academy 2019
