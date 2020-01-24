@@ -1,14 +1,19 @@
 .archive-product-type {
     width: 100%;
     margin-top: 57px;
-    padding-top: 48px;
+    
 
     .shop-page-header {
         border-bottom: 1px dashed #c8c8c8;
         margin-bottom: 3rem;
         text-align: center;
-       // display: none;
-        margin-top: 105px;
+
+        h2{
+            text-transform: uppercase;
+            align-items: center;
+            font-size: 38px;
+        }
+       
     
         .post-type-archive & {
             display: block;
@@ -25,13 +30,20 @@
             margin-left: 0;
             padding-left: 0;
             text-transform: uppercase;
+
+            .taxonomy-button{
+                padding-right: 35px;
+                align-items: center;
+            }
+           
     
             li {
                 margin: 0 1.5rem;
     
                 a {
-                    color: #248a83;
+                   // color: #248a83;
                     text-decoration: none;
+                   
                 }
             }
         }

@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* about page */
 
     .about-page-header {
 
@@ -11,6 +11,7 @@
             background: transparent;
             color: #fff;
             border: none;
+
     
             .site-navigation ul.menu li.list-item a {
                 color: #fff;
@@ -28,6 +29,7 @@
     .site-content {
         margin-left: initial;
         margin-right: initial;
+        padding-top: 0;
     }
 
 .about-container {
@@ -86,3 +88,70 @@
     margin: auto;
     max-width: 1120px;
 }
+
+
+
+/*--------------------------------------------------------------comment--------------------------------------------------------------*/
+.comment{
+    padding-top: 1.5rem;
+    article {
+        padding-bottom: 1.5rem;
+    }
+}
+
+.comment-body {
+    display: flex;
+}
+
+.comment-author cite{
+    font-style: normal;
+    font-weight: 700;
+}
+
+.comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px;
+}
+
+.comment-metadata{
+    color:gray;
+}
+
+.comment-list{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.comment-list>li {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.children li {
+   border-top: 1px solid #e1e1e1;;
+}
+
+.comment-form-author, .comment-form-email {
+    float: left;
+}
+
+.comment-form-author {
+    margin-right: 1%;
+    width: 49%;
+}
+
+.comment-form-email {
+    margin-left: 1%;
+    width: 49%;
+}
+
+.comment-form-url{
+    width: 100%;
+}
+
+.comment-form-cookies-consent{
+    display: none;
+}
+

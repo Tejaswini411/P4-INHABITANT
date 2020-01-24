@@ -59,31 +59,6 @@
                 </ul>
             </section><!-- home__journals -->
 
-            <section class="adventure container">
-					<h2>Latest Adventures</h2>
-					<ul class="clearfix">
-						<?php
-						$args = array(
-							'post_type' => 'adventure',
-							'order' => 'DESC',
-							'posts_per_page' => 4,);
-							$adventure_posts = get_posts( $args ); // returns an array of posts
-							?>
-							<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
-								<li>
-									<div class="adventure-img"><?php the_post_thumbnail('large'); ?>
-									</div>
-									<div class="headline">
-										<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-										<p class="white-link"><a href="<?php the_permalink(); ?>">Read More</a></p>
-									</div>
-								</li>
-							<?php endforeach; ?>
-						</ul>
-						<p class="green-link"><a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a></p>
-					</section><!-- .adventure -->
-			</main><!-- #main -->
-		</div><!-- #primary -->
 
 
 <?php get_footer(); ?>

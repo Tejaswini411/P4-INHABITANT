@@ -11,7 +11,7 @@
 		<footer id="colophon" class="site-footer" style="background-image:url('<?= get_template_directory_uri() ?>/images/dark-wood.png');">
 			<div class="container">
 				<div class="contact">
-					<h3>Contact Info</h3>
+					<h3>CONTACT INFO</h3>
 					<p><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 					<p><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:778-456-7891">778-456-7891</a></p>
 					<p>
@@ -21,7 +21,7 @@
 					</p>
 				</div>
 				<div class="business">
-					<h3>Business Hours</h3>
+					<h3>BUSINESS HOURS</h3>
 					<p><span>Monday-Friday:</span> 9am to 5pm</p>
 					<p><span>Saturday:</span> 10am to 2pm</p>
 					<p><span>Sunday:</span> Closed</p>

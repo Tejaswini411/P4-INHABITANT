@@ -1,40 +1,54 @@
 <?php
 /**
-* The template for displaying archive pages.
-*
-* @package RED_Starter_Theme
-*/
+ * The template for displaying taxonomy product types.
+ *
+ * @package RED_Starter_Theme
+ */
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main">
-				<div class="container">
-					<?php if ( have_posts() ) : ?>
-						<header class="page-header">
-							<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-							<?php the_archive_description(); ?>
-						</header>
-						<div class="product-grid">
-							<ul>
-								<?php while ( have_posts() ) : the_post(); ?>
-									<li>
-										<div class="thumbnail-wrap">
-											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-										</div>
-										<div class="product-wrap">
-											<h2><span><?php the_title(); ?></span></h2>
-											<p><?php echo "<div>" . get_post_meta($post->ID, 'Price', true) . "</div>"; ?></p>
-										</div>
-									</li>
-								<?php endwhile; ?>
-							<?php else : ?>
-								<?php get_template_part( 'template-parts/content', 'none' ); ?>
-							<?php endif; ?>
-						</ul>
-					</div><!--.product-grid-->
-				</div><!--.container-->
-			</main><!-- #main -->
-		</div><!-- #primary -->
-
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		<div class="container">
+			
+			<?php if ( have_posts() ) : ?>
+			
+			<header class="page-header">
+				<!-- archive title and description -->
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );	
+					?>
+				 <div class="single-term-description">
+					 <?php the_archive_description(); ?>
+					</div>
+					
+					<?php endif; ?>
+				</header><!-- .page-header -->
+				
+				<div class="product-container">
+	<?php /* Start the Loop */ ?>
+ 
+ <?php while ( have_posts() ) : the_post(); ?>
+      <div class="product-archive">
+		  <!-- returns thumbnail wrapped in an anchor -->
+		<div class="thumbnail-container">
+	  <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail( 'medium' ); ?>
+        <?php endif; ?>
+        </a>
+		</div>
+		<div class="archive-product-info">
+      <div class="after-title"></div>
+        <?php the_title(); ?> 
+        <div class="dots"></div>
+          <p class="product-price"> </p>
+		  <?php echo "<div>" . get_post_meta($post->ID, 'Price', true) . "</div>"; ?> 
+        </div>
+    	</div>
+    <?php endwhile; ?>
+		</div>
+    </div><!-- #content -->
+    </main><!-- #main -->
+  </div><!-- #primary -->
+  
 <?php get_footer(); ?>

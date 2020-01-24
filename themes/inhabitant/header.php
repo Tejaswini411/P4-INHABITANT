@@ -31,10 +31,10 @@
 					<nav class="site-navigation" role="navigation">
 <div class="main-navigation-container">
 	<ul class="menu">
-			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>product_type">Shop</a></li>
-			<li class="list-item"><a href="<?php echo esc_url(home_url('/')); ?>journal">Journal</a></li>
-			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>about">About</a></li>
-			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>find-us">Find Us</a></li>
+			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>product_type">SHOP</a></li>
+			<li class="list-item"><a href="<?php echo esc_url(home_url('/')); ?>journal">JOURNAL</a></li>
+			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>about">ABOUT</a></li>
+			<li class="list-item "><a href="<?php echo esc_url(home_url('/')); ?>find-us">FIND US</a></li>
 	</ul>
 	<!-- <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?> -->
 
