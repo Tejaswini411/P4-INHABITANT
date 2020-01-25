@@ -6,7 +6,15 @@
 !README.md
 
 plugins/*
-
+!plugins/business-hours-widget/
+!plugins/Contact-Info/
+!plugins/contact-form-7/
+!plugins/debug-bar/
+!plugins/custom-field-suite/
+!plugins/inhabitent-blocks-master/
+!plugins/product-function/
+!plugins/intuitive-custom-post-order/
+!plugins/query-monitor/
 
 
 themes/*

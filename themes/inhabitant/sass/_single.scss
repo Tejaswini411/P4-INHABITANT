@@ -11,18 +11,40 @@
       width: 73%;
     }
 
+    .entry-footer{
+      text-transform: uppercase;
+      padding-bottom: 25px;
+    }
+
+    .cat-links{
+      padding-right: 20px;
+    }
+    
     #secondary {
         width: 27%;
         padding-left: 5%;
+        padding-top: 40px;
       }
       h2{
+        
+        letter-spacing: 2px;
         text-transform: uppercase;
         color: #2f1339;
       }
     
       .site-main {
         width: 760px;
-    
+
+        .black-btn{
+
+          background-color: transparent;
+          border: 1px solid #000;
+          color: #000;
+          line-height: 1;
+          letter-spacing: normal;
+          margin-right: 6px;
+      }
+        
         & .content-area {
           max-width: 800px;
         }
@@ -35,7 +57,7 @@
           img{
             width: 760px;
           }
-    
+
         & .entry-meta {
           background-color: #248a83;
           bottom: 0;

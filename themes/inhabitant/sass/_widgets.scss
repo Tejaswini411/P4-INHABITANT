@@ -1,15 +1,13 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
-
-
 .widget {
-	margin: 0 0 ($base__space-unit * 2);
+	margin: 0 0 $base__space-unit;
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -17,52 +15,41 @@
 	}
 
 	h2 {
-		@include font-size(1.5);
+		font-size: 24px;
+		//letter-spacing: 1px;
+		margin-bottom: 1.4rem;
 	}
+}
 
-	ul {
-		list-style-type: none;
-		margin-left: 0;
-		padding-left: 0;
+
+.contact-info-widget-class {
+	a {
+		font-size: 16px;
+		font-family: 'Merriweather Web';
 	}
-
 	p {
-      margin-bottom: $base__space-unit / 3;
-   }
-
-	.contact-meta {
 		display: flex;
-
-		i {
-			line-height: 1.8;
-	         margin-right: $base__space-unit / 3;
-			width: 20px;
-	   }
+		font-size: 16px;
+		font-family: 'Merriweather Web';
 	}
 
-   .day-of-week {
-	  font-weight: bold;
+
+	i {
+		margin-right: .5rem;
+		width: 1rem;
+	}
+}
+
+
+.business-hours-class {
 	  
-   }
+p {
+	font-family: 'Merriweather Web';
 }
 
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
+	p span {
+	font-weight: bold;
+	
 
-.widget-area {
-    width: 500px;
-    padding: 40px 30px;
-    border-left: 0px;
-    & div {
-      margin: 20px 0;
-      border: 0px;
-    }
-    & a {
-      color:#248a83; ;
-    }
-    & a:hover {
-      color:#248a83 ;
-    }
-  }
+}
+}

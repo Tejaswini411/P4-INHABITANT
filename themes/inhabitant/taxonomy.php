@@ -37,6 +37,7 @@ get_header(); ?>
         <?php endif; ?>
         </a>
 		</div>
+		
 		<div class="archive-product-info">
       <div class="after-title"></div>
         <?php the_title(); ?> 

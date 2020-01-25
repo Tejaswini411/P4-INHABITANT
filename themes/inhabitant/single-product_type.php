@@ -16,6 +16,7 @@ get_header(); ?>
 				</div>
 				<div class="product-desc">
 					<h1><?php the_title(); ?></h1>
+					<div class="dots"></div>
 					<h2><?php echo "<div>" . get_post_meta($post->ID, 'Price', true) . "</div>"; ?></h2>
 					<?php the_content(); ?>
 					<div class="social-wrap">

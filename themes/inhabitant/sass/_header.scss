@@ -3,7 +3,7 @@
     border-bottom: 1px solid #e1e1e1;
     padding: 8px 0;
     position: fixed;
-    top: 32px;
+   // top: 32px;
     left: 0;
     width: 100%;
     z-index: 2;
@@ -51,6 +51,7 @@
             color: $color__header-text;
             margin-right: 24px;
             cursor: pointer;
+           
         }
 
         .search-container {

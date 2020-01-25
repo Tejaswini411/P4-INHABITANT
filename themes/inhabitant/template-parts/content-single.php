@@ -22,15 +22,24 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
+		 <?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>   <!-- .entry-content -->
 
-	<footer class="entry-footer">
+	
+
+	<footer class="entry-footer"> 
 		<?php red_starter_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
+	<div class="social-wrap">
+						<button type="button" class="black-btn"><i class="fab fa-facebook" aria-hidden="true"></i> Like </button>
+						<button type="button" class="black-btn"><i class="fab fa-twitter" aria-hidden="true"></i> Tweet </button>
+						<button type="button" class="black-btn"><i class="fab fa-pinterest" aria-hidden="true"></i> Pin </button>
+					</div><!--.social-wrap-->
+					
 </article><!-- #post-## -->

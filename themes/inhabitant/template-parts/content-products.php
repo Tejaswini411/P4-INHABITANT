@@ -18,8 +18,12 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	
-	<?php echo "<div>" . get_post_meta($post->ID, 'Price', true) . "</div>"; ?> 
-		
+
+	<div class="archive-product-info">
+      <div class="after-title"></div>
+        <?php the_title(); ?> 
+        <div class="dots"></div>
+          <p class="product-price"> </p>
+		  <?php echo "<div>" . get_post_meta($post->ID, 'Price', true) . "</div>"; ?> 
+        </div>
 </article><!-- #post-## -->

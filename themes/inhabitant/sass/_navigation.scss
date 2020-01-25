@@ -5,7 +5,7 @@
 /* Links */
 
 a {
-	 color: #248a83;;
+	 color: #248a83;
 	text-decoration: none;
 	&:hover,
 	&:focus,
@@ -126,4 +126,17 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.single-post {
+
+.nav-previous {
+	display: none;
+   }
+
+
+}
+.site-main .post-navigation {
+
+	display: none;
 }

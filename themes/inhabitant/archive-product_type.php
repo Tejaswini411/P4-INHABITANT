@@ -30,7 +30,8 @@ get_header(); ?>
 	<?php ?>
 </header> <!-- .shop-page-header -->
 		<main id="main" class="site-main" role="main">
-
+		
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -39,15 +40,19 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content', 'products' );
 					
+					
 				?>
+			
 					
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+			
 
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
 
 		<?php endif; ?>
 
