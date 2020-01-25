@@ -9,7 +9,7 @@
         </section>
         <div class="content-wrapper front-page-wrapper">
             <section class="home__products">
-                <h2>Shop Stuff</h2>
+                <h1>Shop Stuff</h1>
                 <div class="home__productsWrapper">
                     <div class="home__productsType">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/do.svg" alt="Do">
@@ -35,7 +35,7 @@
             </section><!-- home__products -->
 
             <section class="home__journals">
-                <h2>Inhabitent Journal</h2>
+                <h1>Inhabitent Journal</h1>
                 <ul>
                     <?php query_posts('posts_per_page=3'); ?>
                     <?php while (have_posts()) : the_post(); ?>

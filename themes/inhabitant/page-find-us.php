@@ -8,14 +8,8 @@ get_header(); ?>
 				<?php echo the_content(); ?>
 	 			 <section class="find-us-main">
 					<h2 class="find-us-title">FIND US</h2>
-					<iframe class ="map"
-					  width="600"
-					  height="200"
-					  frameborder="0" style="border:0"
-					  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDjA4Eebws3UHnF5fo_UqhRqflkFuxEMGQ&q=1490+W+Broadway,+Vancouver,+BC,+Canada
-					" allowfullscreen>
-					</iframe>
-					<h2>WE TAKE CAMPING VERY SERIOUSLY.</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.733279306249!2d-123.13816800000001!3d49.263448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c79e1ac457%3A0x3aea6428fa30dc6a!2s1490%20W%20Broadway%2C%20Vancouver%2C%20BC%20V6H%204E8%2C%20Canada!5e0!3m2!1sen!2sus!4v1579982929366!5m2!1sen!2sus" width="700" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						<h2>WE TAKE CAMPING VERY SERIOUSLY.</h2>
 					<p>Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions.</p>
 				<section class="form">
 				<h2>SEND US EMAIL!</h2>

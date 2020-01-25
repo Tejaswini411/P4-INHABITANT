@@ -425,6 +425,9 @@ label {
   margin-bottom: .5rem;
   text-transform: uppercase; }
 
+.orange {
+  color: #d99054; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1168,6 +1171,14 @@ object {
   padding-top: 0; }
 
 .home h2 {
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 24px;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.4rem; }
+
+.home h1 {
   text-transform: uppercase;
   color: #2f1339;
   font-size: 2.4rem;
