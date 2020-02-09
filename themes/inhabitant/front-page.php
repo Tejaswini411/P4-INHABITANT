@@ -61,4 +61,28 @@
 
 
 
+            <section class="home__adventures">
+                <h2>Latest Adventures</h2>
+                <?php
+                $args = array(
+                    'post_type' => 'adventure_type',
+                    'posts_per_page' => 4,
+                ); ?>
+
+                <?php $my_query = new WP_Query($args); ?>
+
+                <ul>
+                    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                        <li>
+                            <?php
+                            get_template_part('template-parts/content', 'adventures');
+                            ?>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+                <a href="<?php echo esc_url(home_url('/')); ?>/adventure_type" class="btn">More Adventures</a>
+            </section>
+
+
+
 <?php get_footer(); ?>
