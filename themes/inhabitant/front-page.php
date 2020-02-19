@@ -62,7 +62,7 @@
 
 
             <section class="home__adventures">
-                <h2>Latest Adventures</h2>
+                <h1>Latest Adventures</h1>
                 <?php
                 $args = array(
                     'post_type' => 'adventure_type',
